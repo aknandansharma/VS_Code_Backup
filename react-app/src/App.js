@@ -2,11 +2,15 @@
 import './App.css';
 
 function App() {
+  let name = "aknandan"
   return (
     <div className="App">
-      Hi Aknandnan sharma
+      
+      {name}
     </div>
   );
 }
 
 export default App;
+
+// 1:10:00
