@@ -1,19 +1,12 @@
+import React from "react";
+import "./App.css";
+import Header from "./Header";
 
-import './App.css';
-import Header from './components/Header'
 
-
-function App() {
-  let name = "aknandan"
-
-  return (
-    <div className="App">
-      <Header />
-      {name}
-    </div>
-  );
-}
+const App = () => {
+  return <div id="main">
+    <Header />
+  </div>;
+};
 
 export default App;
-
-// 1:51:00
