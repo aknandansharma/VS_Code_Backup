@@ -1,11 +1,14 @@
 
 import './App.css';
+import Header from './components/Header'
+
 
 function App() {
   let name = "aknandan"
+
   return (
     <div className="App">
-      
+      <Header />
       {name}
     </div>
   );
@@ -13,4 +16,4 @@ function App() {
 
 export default App;
 
-// 1:32:00
+// 1:51:00
