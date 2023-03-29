@@ -1,0 +1,2 @@
+1. What is diff b/w NULL ans Undefined?
+2. What is NanN?
