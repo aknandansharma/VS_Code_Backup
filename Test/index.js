@@ -39,3 +39,18 @@
 // console.log(`This is x equal to y  ${x == y}`);
 
 // start with 1:20
+
+// What's the output?
+class Chameleon {
+ static colorChange(newColor) {
+ this.newColor = newColor;
+ return this.newColor;
+ }
+
+ constructor({ newColor = 'green' } = {}) {
+ this.newColor = newColor;
+ }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' });
+console.log(freddie.colorChange('orange'));
