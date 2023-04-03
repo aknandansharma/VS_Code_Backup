@@ -1,6 +1,6 @@
-.header{
-  background-color: red;
-}
-.footer{
-  background-color: green;
+.App{
+  text-align: center;
+  background-color: skyblue;
+  color: red;
+  min-height: 100vh;
 }
