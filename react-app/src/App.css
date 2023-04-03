@@ -1,6 +1,27 @@
 .App{
+  margin: 0;
+  padding: 0;
   text-align: center;
   background-color: skyblue;
   color: red;
   min-height: 100vh;
+}
+
+.header{
+  background-color: blue;
+  color: white;
+  padding: 8px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.movie{
+  background-color: bisque;
+  color: black;
+  border: 1px solid red;
+  padding: 5px;
 }

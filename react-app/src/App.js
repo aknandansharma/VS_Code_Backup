@@ -1,11 +1,30 @@
 import React from 'react'
 import './App.css'
-import Student from './components/Student'
+import Header from './components/Header'
+import Movie from './components/Movie'
+import products from './data.json'
+import { element } from 'prop-types'
+
 
 function App() {
   return (
     <div className='App'>
-      <Student name="ram" age={20} />
+     <Header />
+     <div className="main">
+      {
+        products.map((element) => {
+          return (
+            <Movie
+            title={element.title}
+            description={element.description}
+            price={element.price}
+            thumbnail={element.thumbnail}
+          />
+          )
+        })
+      }
+        
+     </div>
      
     </div>
   )
