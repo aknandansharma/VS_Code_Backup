@@ -41,16 +41,74 @@
 // start with 1:20
 
 // What's the output?
-class Chameleon {
- static colorChange(newColor) {
- this.newColor = newColor;
- return this.newColor;
- }
+// class Chameleon {
+//  static colorChange(newColor) {
+//  this.newColor = newColor;
+//  return this.newColor;
+//  }
 
- constructor({ newColor = 'green' } = {}) {
- this.newColor = newColor;
- }
+//  constructor({ newColor = 'green' } = {}) {
+//  this.newColor = newColor;
+//  }
+// }
+
+// const freddie = new Chameleon({ newColor: 'purple' });
+// console.log(freddie.colorChange('orange'));
+
+// Increment and Decrement Operator
+// var num = 15
+
+
+// console.log(num++); // 15
+// console.log(num++); // 16
+// console.log(++num); // 18
+
+
+// console.log(num); // 15
+// console.log(num--); // 15
+// console.log(--num); // 13
+
+
+// Comparison Operator
+// var a = 30
+// var b = 10
+
+// console.log(a >= b);
+
+// console.log(10 === 10);
+
+// Logical Operator
+
+// console.log(30 > 10 && 10 < 0);
+// console.log(30 > 10 || 10 < 0);
+
+
+// String operator
+// console.log("Aknandan" + " kumar");
+
+// Cnditional
+
+// console.log(3**3);
+// console.log(10 + "number");
+
+// let a = 5
+// let b = 10
+
+// let c
+// c = a
+// a = b
+// b = c
+// console.log(a); // 10
+// console.log(b); // 5
+
+/* ================================== */
+
+/* CONTROL STATEMENT'S*/
+// 1. If ...Else
+let year = 2023
+if(year%2 === 0) {
+    console.log('Leap Year');
+}else{
+    console.log("Not leap year");
 }
-
-const freddie = new Chameleon({ newColor: 'purple' });
-console.log(freddie.colorChange('orange'));
+ // 02:23

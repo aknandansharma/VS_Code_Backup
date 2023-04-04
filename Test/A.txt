@@ -1,2 +1,5 @@
 1. What is diff b/w NULL ans Undefined?
 2. What is NanN?
+3. Diff b/w == and === ?
+4. What Is expression in JavaScript ?
+
