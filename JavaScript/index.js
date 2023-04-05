@@ -21,7 +21,9 @@ const server = http.createServer((req, res) => {
         console.log('HTML server');
         res.end(index)
     }else if(url === '/pro'){
-      res.end(data);
+        // res.setHeader('Content-Type', 'text/html')
+        // let modiIndex = index.replace('**title**', product.title)
+        res.end(modiIndex);
     }else{
         console.log('404 Error');
         res.write("<h1>404 Page is Not Found</h1>");
