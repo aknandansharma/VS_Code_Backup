@@ -1,35 +1,63 @@
-const http = require('http')
+const express = require('express')
+const app = express()
 const fs = require('fs')
+const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'))
+const products = data.products;
 
-const index = fs.readFileSync('index.html')
-const data = JSON.parse(fs.readFileSync('data.json'))
-const product = data.products[1];
 
-const server = http.createServer((req, res) => {
-    console.log("Server start")
-
-    const url = req.url
-
-    if(url === '/'){
-        console.log('Home server');
-        res.end("<h1>This is Home Page</h1>")
-    }
-    else if(url === '/json'){
-        console.log('JSON server');
-        res.end(JSON.stringify(data))
-    }else if(url === '/html'){
-        console.log('HTML server');
-        res.end(index)
-    }else if(url === '/pro'){
-        // res.setHeader('Content-Type', 'text/html')
-        // let modiIndex = index.replace('**title**', product.title)
-        res.end(modiIndex);
-    }else{
-        console.log('404 Error');
-        res.write("<h1>404 Page is Not Found</h1>");
-        res.end()
-    }
+// Application level Midleware
+app.use((req, res, next) => {
+    console.log(req.method, req.ip, req.hostname, new Date(), req.get('User-Agent'));
+    next()
 })
-server.listen(8080)
 
-// 1:50
+// Midleware
+const auth = (req, res, next) => {
+    console.log(req.query);
+    if(req.query.password === '123'){
+        next()
+    }else{
+        res.sendStatus(401)
+    }
+    
+}
+app.use(auth)
+
+// API - End-Point - Server Route
+
+
+app.get('/', (req, res) => {
+    res.json({type:'GET'})
+})
+app.post('/', (req, res) => {
+    res.json({type:'POST'})
+})
+app.put('/', (req, res) => {
+    res.json({type:'PUT'})
+})
+app.patch('/', (req, res) => {
+    res.json({type:'PATCH'})
+})
+app.delete('/', (req, res) => {
+    res.json({type:'DELETE'})
+})
+
+
+
+app.get('/demo', (req, res) => {
+    // res.send('<h1>Home</h1>')
+    // res.sendFile("/home/aknandan/Documents/MERN/JavaScript/index.html");
+    // res.json(products)
+    res.status(201).json(products)
+})
+
+
+
+
+
+
+app.listen(8080, () => {
+    console.log('Server Startd');
+})
+
+// 2:50

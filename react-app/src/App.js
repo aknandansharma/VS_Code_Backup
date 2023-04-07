@@ -1,39 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
-import Header from './components/Header'
-import Movie from './components/Movie'
-import products from './data.json'
-import { element } from 'prop-types'
+
 
 
 function App() {
 
-    let login = true;
-   
+  const [count, setCount] = useState(1)
+
+  const inc = () => {
+    if(count > 0){
+      setCount(count + 1);
+    }
+  }
+
+  const dec = () => {
+      if (count > 1) {
+        setCount(count - 1);
+      }
+  }
 
   return (
     <div className="App">
-      {login === true ? <Header /> : <h1>Dekh le</h1>}
-
-      
-
-      {/* <Header /> */}
-      <div className="main">
-        {products.map((element, index) => {
-          return (
-            <Movie
-              key={index}
-              title={element.title}
-              description={element.description}
-              price={element.price}
-              thumbnail={element.thumbnail}
-            />
-          );
-        })}
-      </div>
+      <h1>{count}</h1>
+      <button onClick={inc} >increment</button>
+      <button onClick={dec} >decrement</button>
     </div>
   );
 }
-// 3:28
 
+// 4:4
 export default App
