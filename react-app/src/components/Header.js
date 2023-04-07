@@ -1,9 +1,11 @@
 import React from 'react'
 
+
 const Header = () => {
   return (
     <div className='header'>
-        <h1>Movies List</h1>
+    <h1>Keep Recording</h1>
+
     </div>
   )
 }
