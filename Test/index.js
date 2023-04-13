@@ -105,10 +105,109 @@
 
 /* CONTROL STATEMENT'S*/
 // 1. If ...Else
-let year = 2023
-if(year%2 === 0) {
-    console.log('Leap Year');
-}else{
-    console.log("Not leap year");
-}
+// let year = 2023
+// debugger;
+// if(year%2 === 0) {
+//     console.log('Leap Year');
+// }else{
+//     console.log("Not leap year");
+// }
  // 02:23
+
+
+//  if(tomar = undefined){
+//     console.log('Yey, we donw');
+//  }else{
+//     console.log('Not Done');
+//  }
+
+// Ternary Operator
+// variableName = (condition) ? value1 : value2
+
+// var age = 18
+
+// // age = (age > 18) ? console.log('Yes') : console.log('No');
+
+// console.log((age >= 18) ? "Vote" : "Not vote");
+
+// Switch Statement
+
+// var area = 'B'
+
+// switch(area){
+//     case 'A':
+//         console.log('A');
+//         break;
+//     case 'B':
+//         console.log('B');
+//         break;
+//     case 'C':
+//         console.log("C");
+//         break;
+//     default :
+//         console.log('Nothing');
+// }
+
+
+// While Loop 
+
+//  console.log('Code Test');
+
+// var num = 1
+// while(num <= 10){
+//     console.log(num);
+//     num++;
+// }
+
+// Do While Loop
+
+// var num = 0
+// do{ 
+//     debugger
+//     console.log(num);
+//     num++;
+// }while(num <= 3)
+
+
+// For Loop
+
+// for(initializer; condition, iteration){
+//     // your code logic
+// }
+
+// for(let num = 1; num <= 10; num++){
+//     debugger
+//     console.log(9*num);
+// }
+ 
+// start with 3:16 ((function))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
