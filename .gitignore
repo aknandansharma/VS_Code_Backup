@@ -2,7 +2,6 @@
 
 # dependencies
 /react-app/node_modules
-/JavaProgram/Test.java/src/node_modules
 /JavaScript/node_modules
 /.pnp
 .pnp.js
