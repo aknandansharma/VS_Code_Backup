@@ -364,26 +364,115 @@
 
 // How to Insert, Add, Replace, and Delete Elements in Arrays (CURD) Operations
 
-const months = ['Jan', 'March', 'April', 'June', 'July']
+// const months = ['Jan', 'March', 'April', 'June', 'July']
 
 // start 5:40
 
 
 // Map(), Reduce(), Filter() 
 
+// Map Method ==> Map()
+
+// const array = [1, 4, 16, 25]
+// num > 9
+// let newArr = array.map((element, index, arr) => {
+//     return element > 5;
+// })
+// console.log(array);
+// console.log(newArr);
+
+// let newArr = array.map((element, index, arr) => {
+//     return `Index no = ${index} and the value of is ${element} belong to ${arr}`
+// })
+// console.log(newArr);
+
+// let newArrfor = array.forEach((element, index, arr) => {
+//     return `Index no = ${index} and the value of is ${element} belong to ${arr}`
+// })
+// console.log(newArrfor);
+
+// Q. Find the Square root using Map()
+// let arr = [25, 36, 49, 64, 81]
+// let arrSquare = arr.map((element, index) => {
+//     return Math.sqrt(element) 
+// })
+// console.log(arrSquare);
+
+// Q. Find the 
+// let arr = [2, 3, 4, 6, 8]
+
+// let arr2 = arr.map((element, index) => {
+//     return element * 2;
+// }).filter((element) => {
+//     return element > 10
+// })
+
+// console.log(arr2);
+
+
+// Reduce Method ==> Reduce()
+
+// accumulator --> Ka Matlab hai ki ek sath jama karna hai (like a box).
+
+// let arr = [5, 6, 2]
+// let sum = arr.reduce((accumulator, element, index, arr) => {
+//     return accumulator += element
+// })
+// console.log(sum);
+
+// Map(), Filter(), and Reduce() ko ek sath use karte hai.
+
+// let arr = [2, 3, 4, 6, 8]
+// sabse pahle array ka square karege usin map.
+// fir 10 se jo bada hai usko filter karnge.
+// fir reduce ka use karke sum karnge.
+
+// let sum = arr.map((element, index, arr) => {
+//     return element * 2;
+// }).filter((element, index, arr) => {
+//     return element > 10;
+// }).reduce((accumulator, element, index, arr) => {
+//     return accumulator += element
+// })
+/**
+ * Jab Map() Kiya to ==> [4, 6, 8, 12, 16]
+ * Jab Filter Kiya to ==> [12, 16]
+ * Jab Reduce Kiya to ==> [12+16] = [28]
+ */
+// console.log(sum);
+
+
+// let arr = [4, 5, 6]
+// let sum = arr.reduce((accumulator, element, index, arr) => {
+//     return accumulator += element;
+// }, 7)
+// console.log(sum);
+
+
+// How To Fatten an Arrays.
+// Converting 2d and 3d array into one dimensional array.
+
+// const arr = [['zone_1'],
+//              ['zone_2'],
+//              ['zone_3'],
+//              ['zone_4'],
+//              ['zone_5'],
+//              ['zone_6'],
+//              ['zone_7'],
+//              ['zone_8'],
+//              ['zone_9', ['zone_8'], ['zone_8']]]
+
+// // console.log(arr);
+// let flatArr = arr.reduce((accum, element) => {
+//     return accum.concat(element)
+// })
+
+// console.log(flatArr);
 
 
 
-
-
-
-
-
-
-
-
-
-
+// Strings In JavaScript.
+// Start with 6:40
 
 
 
