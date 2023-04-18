@@ -182,6 +182,207 @@
  
 // start with 3:16 ((function))
 
+//  function sum() {
+//     var a = 10;
+//     var b = 20;
+//     var total = a + b ;
+//     return total
+//  }
+//  console.log(sum());
+
+
+
+// function expression
+
+// function sum(a, b) {
+//     var total =  a + b;
+//     return total
+// }
+// var funExp = sum(15, 15)
+// console.log(funExp);
+ 
+
+// Anonymous Function
+
+// var funExp = function(a, b) {
+//     return a + b;
+// }
+// console.log(funExp(10, 5));
+
+
+// ES6 JavaScript
+
+// Let, Var and Const
+
+
+// var nameA = 'aknandan'
+// console.log(nameA);
+
+// nameA  = 'kumar'
+// console.log(nameA);
+
+// var => function scope
+// let const = block scope
+
+
+// start 4:00
+
+
+// let currentPlayer = "Player1"
+// let moves = Array(9).fill("")
+
+// const winningConditions = [
+//     [0, 1, 2],
+//     [3, 4, 5],
+//     [6, 7, 8],
+//     [0, 3, 6],
+//     [1, 4, 7],
+//     [2, 5, 8],
+//     [0, 4, 8],
+//     [2, 4, 6]
+// ]
+
+// function makeMove(index) {
+//     if(moves[index - 1] === "") {
+//         const gridItem  = document.getElementById(index)
+//         gridItem.textContent = currentPlayer === "Player1" ? "X" : "O"
+//         moves[index - 1] = currentPlayer
+
+//         if(checkWinner(currentPlayer)) {
+//             alert(`Congratulations! ${currentPlayer} Wins!`)
+//             resetGame()
+//         }else if(moves.filter((move) => move !== "").length === 9) {
+//             alert("Draw!")
+//             resetGame()
+//         }else{
+//             currentPlayer = currentPlayer === "Player1" ? "Player2" : "Player1"
+//         }
+            
+//     }
+// }
+
+// function checkWinner(player) {
+//     for(let i = 0; i < winningConditions.length; i++) {
+//         const [a, b, c] = winningConditions[i]
+//         if(moves[a] === player && moves[b] === player && moves[c] === player) {
+//             return true
+//         }
+//     }
+//     return false
+// }
+
+// function resetGame() {
+//     currentPlayer = "Player1"
+//     moves = Array(9).fill("")
+    
+//     const gridItems = document.getElementsByClassName("grid-item")
+//     for(let i = 0; i < gridItems.length; i++) {
+//         gridItems[i].textContent = ""
+//     }
+// }
+
+
+// Template literals (Template Strings)
+
+
+// for(let i=1; i<=10; i++){
+//     let tableOf = 5
+//     console.log(`${tableOf} * ${i} = ${tableOf*i}`);
+// }
+
+
+
+// Default Parameters
+
+// function mult(a, b=4) {
+//     return a*b;
+// }
+
+// console.log(mult(6));
+
+
+// Fat Arrow Functions
+
+// const sum = (a, b) => {
+//     return a+b
+// }
+
+// console.log(sum(5, 3));
+
+// Arrays In JavaScript
+
+// var myFri = ['akash 52 male', 'vikash', true, 'nitish', 54]
+// console.log(myFri);
+// console.log(myFri[3]);
+
+// var myFri = ['akash', 22, "male", 'vikash', true, 'nitish', 54]
+
+// console.log(myFri[0])
+
+// var myFri = new Array;
+
+// Traversal in Arrays
+// or Navigate the Arrays
+// console.log(myFri.length);
+
+// var myFri = ['akash', 22, "male", 'vikash', true, 'nitish', 54]
+
+// For Loop
+// for(var i=0; i<myFri.length; i++) {
+//     console.log(myFri[i]);
+// }
+
+// For In Loop ==> Only return index numbers.
+
+// for(let e in myFri) {
+//     console.log(e);
+// }
+
+// For of Loop ==> Only Return data of Arrays.
+
+// for(let e of myFri) {
+//     console.log(e);
+// }
+
+// For Each Loop
+
+// myFri.forEach(function (element, index, array) {
+//     console.log(element);
+//     // console.log(index);
+//     // console.log(array);
+// })
+
+// myFri.forEach((element, index, array) => {
+//     console.log(element);
+// })
+
+
+// Serching and Filter in an Array
+// var myFri = ['akash', 22, "male", 'vikash', true, 'nitish', 54]
+
+// How to Sort and Compare an Array
+
+// How to Insert, Add, Replace, and Delete Elements in Arrays (CURD) Operations
+
+const months = ['Jan', 'March', 'April', 'June', 'July']
+
+// start 5:40
+
+
+// Map(), Reduce(), Filter() 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@ const fs = require("fs");
 
 // bodyParser -> iske bina body nahi kam kargi
 app.use(express.json())
-app.use(express.urlencoded())
+// app.use(express.urlencoded())
 
 app.use(express.static('public'))
    
@@ -66,4 +66,4 @@ app.listen(8080, () => {
   console.log("Server Start") 
 });
 
-// 2:50----------------------------------------------------------------------------------------------------------------------------------------------------
+// start with 2:50----------------------------------------------------------------------------------------------------------------------------------------------------
