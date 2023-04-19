@@ -1,69 +1,91 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const morgan = require("morgan");
+
+// get the data.json and index.html
+const index = fs.readFileSync('index.html', 'utf-8')
+const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'))
+const products = data.products
 
 // bodyParser -> iske bina body nahi kam kargi
 app.use(express.json())
 // app.use(express.urlencoded())
-
+app.use(morgan('dev'))
 app.use(express.static('public'))
    
-const data = fs.readFileSync("data.json", "utf-8");
+
 
 // MiddleWare
 
-// app.use((req, res, next) => {
-//     console.log(
-//         req.method, req.ip, req.hostname, req.get('User-Agent'), new Date());
-//     next()
-// })
 
 
-
-const auth  = (req, res, next) => {
-    // console.log(req.query);
-    if (req.body.password === '123') {
-        next()
-    } else {
-        // res.sendStatus(401)
-         res.status(404).send('<h1>404 NOT FOUND</h1>')
-    }
-    
-}
-
-// app.use(auth)
 
  
 
 // API - End-Point - Route
-app.get("/", auth, (req, res) => {
-    res.status(200).send('<h1>GET</h1>');
+
+// Products
+
+// API ROOT, Base URL, ex:- google.com/api/v2/
+
+// C U R D Operations (Create, Read, Update, Delete)
+
+// READ GET /products
+app.get("/products", (req, res) => {
+    res.json(products)
   });
- 
-app.post("/", auth,  (req, res) => {
-    res.status(200).send('<h1>POST</h1>');
-  });
-app.put("/", (req, res) => {
-    res.status(200).send('<h1>PUT</h1>');
-  });
- 
-app.patch("/", (req, res) => {
-    res.status(200).send('<h1>PATCH</h1>');
-  });
-app.delete("/", (req, res) => {
-    res.status(200).send('<h1>DELETE</h1>');
+// READ GET /products/:id
+app.get("/products/:id", (req, res) => {
+    // console.log(req.params);
+    const id = +req.params.id
+    const product = products.find(p=>p.id === id)
+    res.json(product)
   });
  
 
-app.get("/demo", (req, res) => {
-  // res.send("Aknnadan kumar")
-  // res.sendFile('/Users/aknandan/Desktop/VS_Code_Backup/JavaScript/index.html');
-  // res.json(data)
-  res.status(201).send("ths is demo :-)");
-});
+// CREATE POST /products/:id
+app.post("/products",  (req, res) => {
+
+    console.log(req.body);
+    products.push(req.body)
+    res.json(req.body);
+  });
+
+
+// UPDATE PUT /products/:id
+app.put("/products/:id",  (req, res) => {
+  const id = +req.params.id
+  const productIndex = products.findIndex(p=>p.id === id)
+  products.splice(productIndex,1,{...req.body, id:id})
+  res.status(201).json()
+  });
+
+
+// UPDATE PATCH /products/:id
+app.patch("/products/:id",  (req, res) => {
+  const id = +req.params.id
+  const productIndex = products.findIndex(p=>p.id === id)
+  const product = products[productIndex]
+  products.splice(productIndex,1,{...product ,...req.body})
+  res.status(201).json()
+  });
+
+
+// DELETE DELETE /products/:id
+app.delete("/products/:id",  (req, res) => {
+  const id = +req.params.id
+  const productIndex = products.findIndex(p=>p.id === id)
+  const product = products[productIndex]
+  products.splice(productIndex, 1)
+  res.status(201).json(product)
+  });
+
+
+
 
 app.listen(8080, () => {
   console.log("Server Start") 
 });
 
-// start with 2:50----------------------------------------------------------------------------------------------------------------------------------------------------
+// start with 3:33
