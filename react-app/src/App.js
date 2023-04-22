@@ -1,10 +1,21 @@
-
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import About from "./components/About";
+// import Photo from "./components/Photo";
+import { Router, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi I am React.js!</h1>
+      <Router>
+        
+          <Route path="/" ><Home/></Route>
+          <Route path="/about" ><About/></Route>
+          <Route path="/contact" ><Contact/></Route>
+          {/* <Route path="*" ><Photo/></Route> */}
+        
+      </Router>
     </div>
   );
 }
