@@ -474,6 +474,140 @@
 // Strings In JavaScript.
 // Start with 6:40
 
+// let yname = new String("Aknandan")
+// console.log(yname.length);
+
+
+// const myBio = 'My name is aknandan'
+// console.log(myBio.indexOf('name'));
+
+
+// search string
+// const myBio = 'I am aknandan kumar sharma'
+// let sData = myBio.search('kumar')
+// console.log(sData);
+
+// Etracting String Parts
+
+// The Slice()
+// var str = "Apple, Banana, Kiwi"
+// console.log(str.slice(0, 14));
+
+
+// The SubString() 
+
+// var str = "Apple, Banana, Kiwi"
+// let res = str.substring(0, 5)
+// console.log(res);
+
+// The substr() 
+
+// var str = "Apple, Banana, Kiwi"
+// let res = str.substr(-4)
+// console.log(res);
+
+
+// Replacing String Content()
+
+// let myBiodata = `I am aknandan kumar sharma 10`
+// // let replace = myBiodata.replace('aknandan', 'nandan')
+// let replace = myBiodata.replace('10', '30')
+// console.log(myBiodata);
+// console.log(replace);
+
+
+// Extracting String Characters
+
+
+// let str = "Hello World"
+// console.log(str.charAt(0));
+// console.log(str.charCodeAt(0));
+
+
+// Challenge Time
+
+// let str = "Hello World"
+// let lastChar = str.length
+// console.log(str.charCodeAt());
+
+// let str = "Hello World"
+// console.log(str[0]);
+
+
+// let myName = "Aknandan Sharma"
+// console.log(myName.toLowerCase());
+// console.log(myName.toUpperCase());
+
+// let fName = "Aknandan"
+// let lName = "Sharma"
+
+// console.log(fName.concat(" ", lName));
+
+// Trim Method
+// var str = "           H    i             "
+// console.log(str.trim());
+
+
+// Converting a String to an Array
+
+// var text = "a, b, c, d, e";
+// console.log(text.split(", "));
+// console.log(text.split(" "));
+// console.log(text.split("|"));
+
+
+/**
+ * DATE AND TIME METHODS
+ * 
+ * Date Methods (get and set)
+ * Time Methods (get and set)
+ */
+
+
+// let currDate = new Date()
+// console.log(currDate);
+
+
+console.log(new Date());
+console.log(new Date().toLocaleString());
+console.log(new Date().toString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
