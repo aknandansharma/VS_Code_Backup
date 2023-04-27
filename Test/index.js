@@ -568,36 +568,90 @@
 // console.log(currDate);
 
 
-console.log(new Date());
-console.log(new Date().toLocaleString());
-console.log(new Date().toString());
+// console.log(new Date());
+// console.log(new Date().toLocaleString());
+// console.log(new Date().toString());
 
 
 
+// console.log(Date.now());
+
+
+// var d = new Date(2023, 11, 24, 10, 33, 30, 0)
+// console.log(d.toLocaleString());
 
 
 
+// var d = new Date("May 13, 2023 16:18:00")
+// console.log(d);
+// console.log(d.toLocaleString());
+
+// Date Methods
+
+// const curDate = new Date()
+// console.log(curDate.toLocaleString());
+// console.log(curDate.getFullYear());
+// console.log(curDate.getMonth());
+// console.log(curDate.getDate());
+// console.log(curDate.getDay());
+// console.log(curDate.getTime());
+// console.log(curDate.getHours());
+// console.log(curDate.getMilliseconds());
 
 
 
+// Time Method
+// const curTime = new Date()
+
+
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
 
 
 
+// let curTime = new Date()
+// console.log(curTime.setTime(5));
+// console.log(curTime.getHours(5));
+// console.log(curTime.getMinutes(5));
+// console.log(curTime.getSeconds(5));
+// console.log(curTime.getMilliseconds(5));
 
 
 
+/**
+ * JavaScript MATH OBJECT()
+ 
+ * The JS Math object allows you to perform mathematical tasks on numbers.
+*/
 
+// console.log(Math.PI);
 
+// let num = 10.4
+// console.log(Math.round(num));
 
+// console.log(Math.pow(2, 5));
 
+// console.log(Math.sqrt(80000000000000000000000000000));
 
+// console.log(Math.abs(-23));
 
+// Math.ceil()
 
+console.log(Math.ceil(4.4));
+console.log(Math.ceil(4.9));
+console.log(Math.ceil(4.1));
+console.log(Math.ceil(99.1));
 
+console.log('--------------------');
 
-
-
-
+console.log(Math.floor(4.4));
+console.log(Math.floor(4.9));
+console.log(Math.floor(4.1));
+console.log(Math.floor(99.1));
+ 
 
 
 
