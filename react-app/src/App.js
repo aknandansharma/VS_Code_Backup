@@ -1,28 +1,14 @@
-import "./App.css";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import About from "./components/About";
-import Photo from "./components/Photo";
-import Header from "./components/Header";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react'
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <BrowserRouter>
-      <Header />
-      <Routes>
-        
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Photo />} /> 
-      </Routes>
-   
-    </BrowserRouter>
+    <div className='App'>
+      <h1>Props Driling</h1>
     </div>
-  );
+  )
 }
 
-export default App;
-// start with 6:37
+export default App
+
+// start with 7:43

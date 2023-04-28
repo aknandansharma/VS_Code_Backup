@@ -1,22 +1,29 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      fontWeight : isActive ? "bold" : "normal",
+      color: isActive ? "green" : "white",
+      
+    }
+  }
   return (
     <>
     <nav className='header'>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink style={navLinkStyle} to="/">Home</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink style={navLinkStyle} to="/contact">Contact</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink style={navLinkStyle} to="/about">About</NavLink>
         </li>
         <li>
-          <Link to="*">Photo</Link>
+          <NavLink style={navLinkStyle} to="*">Photo</NavLink>
         </li>
       </ul>
     </nav>
