@@ -7,28 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-
-
-    <p>Click the function to a display a date after changing the.</p>
-
-
-    <button onclick="myFun()">Try It</button>
-
-    <p id="demo"></p>
+    <div class="main-child">
+        <div class="child-one">
+            <p>I am child one</p>
+        </div>
+        <div class="child-two">
+            <p>I am child two</p>
+        </div>
+        <div class="child-three">
+            <p>I am child three</p>
+        </div>
+    </div>
 
     <script>
-        // function myFun() {
-        //     var d= new Date()
-        //     d.toLocaleString()
-        //     document.getElementById("demo").innerHTML = d
-        // }
-
-        (function() {
-            setInterval(() => {
-                var d= new Date().toLocaleTimeString()
-                document.getElementById("demo").innerHTML = d
-            }, 1000)
-        })()
+        
     </script>
 </body>
 </html>

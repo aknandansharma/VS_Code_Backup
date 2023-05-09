@@ -629,7 +629,7 @@
 
 // console.log(Math.PI);
 
-// let num = 10.4
+// let num = 10.5
 // console.log(Math.round(num));
 
 // console.log(Math.pow(2, 5));
@@ -640,23 +640,47 @@
 
 // Math.ceil()
 
-console.log(Math.ceil(4.4));
-console.log(Math.ceil(4.9));
-console.log(Math.ceil(4.1));
-console.log(Math.ceil(99.1));
+// console.log(Math.ceil(4.4));
+// console.log(Math.ceil(4.9));
+// console.log(Math.ceil(4.1));
+// console.log(Math.ceil(99.1));
 
-console.log('--------------------');
+// console.log('--------------------');
 
-console.log(Math.floor(4.4));
-console.log(Math.floor(4.9));
-console.log(Math.floor(4.1));
-console.log(Math.floor(99.1));
+// console.log(Math.floor(4.4));
+// console.log(Math.floor(4.9));
+// console.log(Math.floor(4.1));
+// console.log(Math.floor(99.1));
  
 
+// Math.max() and Math.min()
+// console.log(Math.min(0, 150, 30, 20, -8, -200));
+// console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+
+// Math.random()
+// console.log(Math.random());
+// console.log(Math.floor(Math.random()*10));
+
+//Math.trunc()
+// console.log(Math.trunc(4.9));
+// console.log(Math.trunc(-99.1));
 
 
 
+/*
+ * DOM - (Document Object Models)
+ * BOM - (Browser Object Models)
+ * -----------------------------------
+ * 
+ * Windows vs Document
+ * DOM vs BOM
+ * DOM Navigation
+ * Searching and getting Elements Reference
+ * 
+*/
 
+// Start with 9:00:00
 
 
 
