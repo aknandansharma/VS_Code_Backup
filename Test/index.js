@@ -684,6 +684,500 @@
 
 
 
+// var object = new Object(null);
+
+// var Object = {
+//     name: "akash",
+//     age: 34
+// }
+
+// console.log(Object);
+
+
+
+/*------------------------------------------- */
+
+// function Person(name, age) {
+//     this.name = name
+//     this.age = age
+
+// }
+// let object = new Person('Ak', 34)
+// console.log(object);
+
+// let emp1 = {
+//     fname: 'emp1',
+//     lname: 'emp1'
+// }
+// let emp2 = {
+//     fname: 'emp2',
+//     lname: 'emp2'
+// }
+// function callEmp(emp1, emp2){
+//     console.log(
+//         emp1 + " " + this.fname + " " + this.lname + emp2
+//     );
+// } 
+// callEmp.call(emp1, "hello", "how")
+
+
+// let arrayIntegers = [1, 2, 3, 4, 5];
+// console.log(arrayIntegers.splice(0, 3));
+
+// console.log([] == []);
+// console.log(typeof [] , typeof []);
+
+// const unaryFun = (a) => console.log(a + 10);
+// unaryFun(13)
+
+
+// const curryFun = (a) => (b) => (c) => a + b + c;
+
+// console.log(curryFun(1)(2)(3));
+
+// function a (a){
+//     return function(b){
+//         return function(c){
+//             console.log((a+b+c)*2);
+//         }
+//     }
+// }
+// a(1)(2)(3)
+
+
+// let age = 23
+// if(age === 23){
+//      age = 35
+//     console.log(age); // 35
+// }
+// console.log(age); // 23
+
+// n = 20
+// console.log(n);
+// var n 
+
+// (function(){
+//     console.log(1);
+//     setTimeout(() => {
+//         console.log(2);
+//     },2000)
+//     console.log(3);
+// })()
+
+
+
+    // for(let i=0; i<5; i++){
+    //     set(() => {
+    //         console.log(i);
+    //     }, 2000)
+    // }
+
+    // let uri = "employeeDetails?name=john&occupation=manager";
+    // let encoded_uri = encodeURI(uri);
+    // let decoded_uri = decodeURI(encoded_uri);
+
+    // console.log(encoded_uri);
+    // console.log(decoded_uri);
+ 
+// var message;
+// console.log(message);
+// message = "The variable Has been hoisted";
+
+// message("Good morning"); //Good morning
+
+// function message(name) {
+//   console.log(name);
+// }
+
+// class Bike {
+//     constructor(color, model) {
+//       this.color = color;
+//       this.model = model;
+//     }
+  
+//     getDetails() {
+//       return this.model + " bike has" + this.color + " color";
+//     }
+// }
+
+// const print = new Bike('Hinda', 'red')
+// console.log(print.getDetails());
+
+
+// function welCome() {
+//     var newFun = function() {
+//         console.log('THis is closure');
+//     }
+//     newFun()
+// }
+// welCome()
+
+// const promise = new Promise((resolve, reject) => {
+//     console.log('I am upper case');
+//     setTimeout(()=>{
+//         resolve("I'm a Promices!")
+//     },2000)
+
+//     console.log('9403');
+// })
+// promise
+//     .then((value)=>{
+//         console.log(value);
+//     })
+//     .catch((err)=>{
+//         console.log(err);
+//     })
+
+
+
+// function callBack(name) {
+//     console.log("Hello " + name);
+// }
+
+// function outerFun(call){
+//     let name = "aknandan"
+//     call(name)
+// }
+
+// outerFun(callBack)
+
+
+
+// function firstFunction() {
+//     // Simulate a code delay
+//     setTimeout(function () {
+//       console.log("First function called");
+//     }, -1000);
+//   }
+//   function secondFunction() {
+//     console.log("Second function called");
+//   }
+//   firstFunction();
+//   secondFunction();
+
+
+
+// new Promise(function (resolve, reject) {
+//   setTimeout(() => resolve(1), 1000);
+// })
+//   .then(function (result) {
+//     console.log(result); // 1
+//     return result * 2;
+//   })
+//   .then(function (result) {
+//     console.log(result); // 2
+//     return result * 3;
+//   })
+//   .then(function (result) {
+//     console.log(result); // 6
+//     return result * 4;
+//   });
+
+
+
+
+// var promise1 = new Promise(function (resolve, reject) {
+//   setTimeout(resolve, 500, "one");
+// });
+// var promise2 = new Promise(function (resolve, reject) {
+//   setTimeout(resolve, 100, "two");
+// });
+
+// Promise.race([promise1, promise2]).then(function (value) {
+//   console.log(value); // "two" // Both promises will resolve, but promise2 is faster
+// });
+
+
+// "use strict"
+// let x = 3; // This will not cause an error.
+// myFunction();
+
+// function myFunction() {
+//   "use strict";
+//   let y = 3.14; // This will cause an error
+//   console.log(y);
+// }
+
+// let user = {
+//     name: "Aknandn",
+//     age: 25
+// }
+
+// console.log(user);
+// delete user.age
+// console.log(user);
+
+// console.log(typeof "John Abraham"); // Returns "string"
+// console.log(typeof (1 + 2)); // Returns "number"
+// console.log(typeof [1, 2, 3]) // Returns "object" because all arrays are also objects
+
+// var arr2 = [1,2,3,4]
+// console.log(typeof arr2);
+
+// var user = 4
+// console.log(typeof user);
+
+// user = 3
+
+// let user = null
+// console.log(typeof user);
+
+// console.log(msg);
+
+// msg  = 34
+
+
+// console.log(("hello"));
+
+// let str = "jbdjfa"
+// str.ak = 4
+
+// console.log(str.ak);
+
+
+// let b = 8e1
+// console.log(b);
+
+// if(1.23e6 === 1.23 * 1000000) {
+//     console.log('kfakj');
+// }
+
+
+
+ 
+
+// let range = {
+//     from: 1,
+//     to: 5,
+  
+//     [Symbol.iterator]() {
+//       this.current = this.from;
+//       return this;
+//     },
+  
+//     next() {
+//       if (this.current <= this.to) {
+//         return { done: false, value: this.current++ };
+//       } else {
+//         return { done: true };
+//       }
+//     }
+//   };
+  
+//   for (let num of range) {
+//     console.log(num); // 1, then 2, 3, 4, 5
+//   }
+
+
+// for(let p of "Aknandan") {
+//     console.log(p
+//         );
+// }
+
+// let str = '𝒳😂';
+// for (let char of str) {
+//     console.log( char ); // 𝒳, and then 😂
+// }
+
+// let map = new Map()
+// map.set('1', 'Str1')
+// map.set(1, 'Str2')
+// map.set(true, 'Str3')
+
+// console.log(map.get('1'));
+// console.log(map.size);
+
+
+// let arr = [
+//     {
+//         name: "Aknandan",
+//         age: 23
+//     },
+//     {
+//         name: 'Akash',
+//         age: 34
+//     },
+//     {
+//         name: 'Vikash',
+//         age:29
+//     },
+//     {
+//         name: 'Rahul',
+//         age: 38
+//     }
+// ]
+
+// for(let value of arr) {
+//     console.log(value);
+// }
+
+// let result = arr.map((value, index) => {
+//     console.log(`This is key ${index} and it's value ${value.name} and age will be ${value.age}`);
+// })
+
+
+// let obj = {
+//     name: "John",
+//     age: 30
+// };
+  
+// let map = new Map(Object.entries(obj));
+  
+// console.log( map.get('name') ); // John
+
+
+// let set = new Set();
+
+// let john = { name: "John" };
+// let pete = { name: "Pete" };
+// let mary = { name: "Mary" };
+
+// // visits, some users come multiple times
+// set.add(john);
+// set.add(pete);
+// set.add(mary);
+// set.add(john);
+// set.add(mary);
+
+// // set keeps only unique values
+// console.log( set.size ); // 3
+
+// for (let user of set) {
+//   console.log(user.name); // John (then Pete and Mary)
+// }
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+  
+  // loop over values
+//   for (let value of Object.values(user)) {
+//     console.log(value); // John, then 30
+//   }
+
+
+
+// let arr = ["Aknandan", "Sharma"]
+
+// let [name, lname] = arr
+
+// console.log(name);
+// console.log(lname);
+
+
+// let name = "Aknandan"
+// let surname = "Sharma"
+
+// [name, surname] = [surname, name] 
+
+// console.log(`${name} ${surname}`);
+
+
+// let student = {
+//     name: 'John',
+//     age: 30,
+//     isAdmin: false,
+//     courses: ['html', 'css', 'js'],
+//     spouse: null
+// };
+
+// console.log(student);
+
+// let json = JSON.stringify(student)
+
+// console.log(json);
+
+
+
+// console.log(Math.pow(3,3));
+
+// function sumTo(n) {
+//   if(n == 0 || n == 1) {
+//     return n
+//   }
+
+//   return n * sumTo(n-1); // 5 + 4 + 3 + 2 + 1
+// }
+// console.log(sumTo(6));
+
+
+// function sum(...arg) {
+//   let sum = 0
+//   for(let i of arg)
+//     sum += i
+  
+//     return sum
+// }
+
+// console.log(sum(2, 3, 4, 3, 5));
+
+// {
+//  var name = "Aknandan"
+//   console.log(name)
+  
+// }
+// console.log(name);
+
+// (function so() { // <-- SyntaxError: Function statements require a function name
+
+//   var message = "Hello";
+
+//   console.log(message); // Hello
+
+// })()
+
+// (function() {
+//   console.log('iife function one');
+// })()
+
+// (function() {
+//   console.log('iife function two');
+// }())
+
+// !function() {
+//   console.log('iife function three');
+// }()
+
+// +function() {
+//   console.log('iife function four');
+// }()
+
+// f(!window.Promise) {
+//   console.log('Somthing');
+// }
+
+// function Aknandan() {
+//   console.log("Hi");
+// }
+
+// console.log(Aknandan.name);
+
+
+// function f(sayHi = function() {}) {
+//   console.log(sayHi.name); // sayHi (works!)
+// }
+
+// f();
+
+
+// let sayHi = function func(who) {
+//   console.log(`Hello`);
+// };
+// sayHi()
+
+// let sum = new Function('name', 'return name')
+// console.log(sum('Aknandan'));
+
+// function getFunc() {
+//   let value = "test";
+
+//   let func = new Function(console.log(value));
+
+//   return func;
+// }
+
+// getFunc()();
 
 
 
