@@ -1,40 +1,14 @@
-import React, { useState }  from 'react'
 import './App.css'
+import useCounter from './useCounter'
 
 
 const App = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-
-  const handeSubmit = (e) => {
-    e.preventDefault()
-
-    console.log(name);
-    console.log(email);
-    setName('')
-    setEmail('')
-  }
- 
+  const { count, increment, decrement } = useCounter(1);
   return (
     <div className='App'>
-      <form onSubmit={handeSubmit}>
-          <label>
-            Name: 
-            <input type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-             />
-          </label>
-          <label>
-            Email: 
-            <input type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-             />
-          </label>
-          <br />
-          <button  type='submit' >submit</button>
-      </form>
+       <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
     </div>
   )
 }
