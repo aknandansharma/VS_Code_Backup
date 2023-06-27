@@ -1,14 +1,13 @@
 import './App.css'
-import useCounter from './useCounter'
+import Data  from './components/Data'
 
 
 const App = () => {
-  const { count, increment, decrement } = useCounter(1);
+  // json data given below.
+  // jsonplaceholder.typicode.com/users
   return (
     <div className='App'>
-       <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <Data/>
     </div>
   )
 }
